@@ -1,0 +1,14 @@
+---
+import Navbar from "@/components/Navbar.tsx";
+---
+
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website Prodi</title>
+  </head>
+  <body>
+    <Navbar client:load />  <!-- Wajib pakai client:load -->
+    <slot /> 
+  </body>
+</html>

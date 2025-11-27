@@ -1,0 +1,54 @@
+---
+import "../../../styles/tailwind.css";
+
+const posts = {
+  "penerimaan-mahasiswa-baru-2024-2025": {
+    title: "Penerimaan Mahasiswa Baru 2024/2025 Telah Dibuka!",
+    date: "11/26/2025",
+    image: "/profile/public/aidil.png",
+    content: `
+      Program Studi Teknik Informatika UIN Suska Riau dengan bangga mengumumkan bahwa
+      penerimaan mahasiswa baru tahun 2024/2025 telah dibuka. Kami mengundang calon
+      mahasiswa untuk bergabung dan menjadi bagian dari komunitas akademik yang inovatif.
+    `,
+  },
+  "seminar-nasional-teknologi-informasi": {
+    title: "Seminar Nasional Teknologi Informasi",
+    date: "11/25/2025",
+    image: "/images/seminar-ti.jpg",
+    content: `
+      Seminar nasional ini menghadirkan pemateri dari berbagai universitas dan industri
+      dalam bidang kecerdasan buatan dan keamanan siber.
+    `,
+  },
+  "workshop-ai-mahasiswa": {
+    title: "Workshop AI untuk Mahasiswa",
+    date: "11/22/2025",
+    image: "/images/workshop-ai.jpg",
+    content: `
+      Workshop ini memperkenalkan berbagai tools AI untuk riset dan pengembangan aplikasi modern.
+    `,
+  },
+};
+
+// Ambil parameter slug dari URL
+const { slug } = Astro.params;
+const post = posts[slug];
+---
+
+{post ? (
+  <section class="py-16 px-6 max-w-4xl mx-auto">
+    <a href="/berita" class="text-blue-600 hover:underline">← Kembali ke daftar berita</a>
+
+    <img src={post.image} class="w-full h-96 object-cover rounded-xl mt-6 shadow" />
+
+    <h1 class="text-4xl font-bold text-gray-800 mt-6">{post.title}</h1>
+    <p class="text-gray-500 text-sm mt-1">{post.date}</p>
+
+    <p class="text-gray-700 text-lg leading-relaxed mt-6 whitespace-pre-line">
+      {post.content}
+    </p>
+  </section>
+) : (
+  <p class="text-center py-20 text-lg">Berita tidak ditemukan.</p>
+)}
