@@ -1,18 +1,17 @@
 ---
 // import Navbar from "../pages/navbar.astro";
 // import Hero from "../pages/hero.astro";
-import "../styles/tailwind.css";
-import About from "../pages/about.astro";
-import Home from "../pages/home.astro";
+import About from "../pages/globals/landing-pages/about.astro";
+import Home from "../pages/globals/landing-pages/home.astro";
+import HeroSlider from "../components/HeroSlider";
 import News from "../pages/berita/news.astro";
-import MainLayout from "@/layouts/MainLayout.astro";
+import Center from "../pages/center.astro";
 ---
 
-
-<MainLayout>
-    <section>
-<Home />
-<About />
-<News />
+  <section>
+    <HeroSlider client:load />
+    <Home />
+    <About />
+    <Center />
+    <News />
   </section>
-</MainLayout>
