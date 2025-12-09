@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css";
-import Navbar from "@/components/Navbar.tsx";
 ---
 
 <!doctype html>
@@ -9,7 +8,6 @@ import Navbar from "@/components/Navbar.tsx";
 		<link rel="stylesheet" href="../styles/global.css" />
 	</head>
 	<body>
-		<Navbar client:load />  <!-- Wajib pakai client:load -->
 		<slot />
 	</body>
 </html>
