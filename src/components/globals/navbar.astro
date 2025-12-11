@@ -1,0 +1,200 @@
+---
+ 
+---
+
+<nav class="w-full border-b bg-white/70 backdrop-blur-md fixed top-0 left-0 right-0 z-50">
+  <div class="container mx-auto flex items-center justify-between py-4 px-4">
+    
+<div class="flex items-center gap-3 font-semibold text-xl">
+  <img 
+    src="/globals/uin.png" 
+    alt="logo UIN Suska Riau"
+    class="w-10 h-10 object-contain"
+  />
+  <a href="/" class="text-base md:text-lg">TEKNIK INFORMATIKA</a>
+</div>
+
+    
+    <!-- Menu Desktop -->
+    <div class="hidden md:flex gap-6">
+      <a href="/" class="hover:text-blue-600 px-3 py-2">Beranda</a>
+      
+      <!-- Dropdown Profil -->
+      <div class="relative" data-dropdown>
+        <button
+          type="button"
+          class="hover:text-blue-600 px-3 py-2 flex items-center gap-1"
+          data-menu-btn="profil"
+          aria-expanded="false"
+          aria-controls="menu-profil"
+        >
+          Profil
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
+            <path d="m6 9 6 6 6-6"/></svg>
+        </button>
+
+        <div
+          id="menu-profil"
+          class="absolute bg-white shadow-xl rounded-lg p-4 w-64 mt-2 z-50 hidden"
+          data-menu="profil"
+          role="menu"
+        >
+          <a href="/profil-pages/sejarah" class="block py-2 px-3 hover:bg-gray-100 rounded">Sejarah</a>
+          <a href="/visi-misi" class="block py-2 px-3 hover:bg-gray-100 rounded">Visi, Misi, Tujuan, dan Strategi</a>
+          <a href="/rencana-strategi" class="block py-2 px-3 hover:bg-gray-100 rounded">Rencana Strategi</a>
+          <a href="/panduan-pengelolaan" class="block py-2 px-3 hover:bg-gray-100 rounded">Panduan Pengelolaan Pendidikan</a>
+          <a href="/struktur" class="block py-2 px-3 hover:bg-gray-100 rounded">Struktur Organisasi</a>
+          <a href="/dosen" class="block py-2 px-3 hover:bg-gray-100 rounded">Dosen</a>
+          <a href="/laboratorium" class="block py-2 px-3 hover:bg-gray-100 rounded">Laboratorium</a>
+          <a href="/ruang-kelas" class="block py-2 px-3 hover:bg-gray-100 rounded">Ruang Kelas</a>
+          <a href="/prestasi" class="block py-2 px-3 hover:bg-gray-100 rounded">Prestasi</a>
+        </div>
+      </div>
+      
+      <!-- Dropdown Akademik -->
+      <div class="relative" data-dropdown>
+        <button
+          type="button"
+          class="hover:text-blue-600 px-3 py-2 flex items-center gap-1"
+          data-menu-btn="akademik"
+          aria-expanded="false"
+          aria-controls="menu-akademik"
+        >
+          Akademik
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
+            <path d="m6 9 6 6 6-6"/></svg>
+        </button>
+
+        <div
+          id="menu-akademik"
+          class="absolute bg-white shadow-xl rounded-lg p-4 w-64 mt-2 z-50 hidden"
+          data-menu="akademik"
+          role="menu"
+        >
+          <a href="/penerimaan" class="block py-2 px-3 hover:bg-gray-100 rounded">Penerimaan</a>
+          <a href="/pelayanan" class="block py-2 px-3 hover:bg-gray-100 rounded">Pelayanan Administrasi</a>
+          <a href="/kurikulum" class="block py-2 px-3 hover:bg-gray-100 rounded">Kurikulum</a>
+          <a href="/kalender" class="block py-2 px-3 hover:bg-gray-100 rounded">Kalender Akademik</a>
+          <a href="/beasiswa" class="block py-2 px-3 hover:bg-gray-100 rounded">Beasiswa</a>
+          <a href="/tugas-akhir" class="block py-2 px-3 hover:bg-gray-100 rounded">Info Tugas Akhir (TA)</a>
+          <a href="/kerja-praktik" class="block py-2 px-3 hover:bg-gray-100 rounded">Info Kerja Praktik (KP)</a>
+          <a href="/labssquad" class="block py-2 px-3 hover:bg-gray-100 rounded">Labs Squad</a>
+        </div>
+      </div>
+      
+      <!-- Dropdown Penelitian -->
+      <div class="relative" data-dropdown>
+        <button
+          type="button"
+          class="hover:text-blue-600 px-3 py-2 flex items-center gap-1"
+          data-menu-btn="penelitian"
+          aria-expanded="false"
+          aria-controls="menu-penelitian"
+        >
+          Penelitian
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
+            <path d="m6 9 6 6 6-6"/></svg>
+        </button>
+
+        <div
+          id="menu-penelitian"
+          class="absolute bg-white shadow-xl rounded-lg p-4 w-64 mt-2 z-50 hidden"
+          data-menu="penelitian"
+          role="menu"
+        >
+          <a href="/jurnal" class="block py-2 px-3 hover:bg-gray-100 rounded">Jurnal COreIT</a>
+          <a href="/aiorc" class="block py-2 px-3 hover:bg-gray-100 rounded">Artificial Intelligence and Optimization Research Center (AIORC)</a>
+          <a href="/software" class="block py-2 px-3 hover:bg-gray-100 rounded">Software Engineering</a>
+          <a href="/teknologi" class="block py-2 px-3 hover:bg-gray-100 rounded">Information Technology</a>
+        </div>
+      </div>
+      
+      <!-- Menu Lainnya -->
+      <a href="/berita" class="hover:text-blue-600 px-3 py-2">Berita</a>
+      <a href="/agenda" class="hover:text-blue-600 px-3 py-2">Agenda</a>
+      <a href="/alumni" class="hover:text-blue-600 px-3 py-2">Alumni</a>
+      <a href="https://hima.tif.uin-suska.ac.id/" class="hover:text-blue-600 px-3 py-2" target="_blank">HIMATIF</a>
+    </div>
+    
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-2xl" id="mobile-menu-btn">☰</button>
+    
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg hidden">
+      <div class="container mx-auto py-4 px-4 flex flex-col gap-2">
+        <a href="/" class="py-2 px-3 hover:bg-gray-100">Beranda</a>
+        <a href="/profil" class="py-2 px-3 hover:bg-gray-100">Profil</a>
+        <a href="/akademik" class="py-2 px-3 hover:bg-gray-100">Akademik</a>
+        <a href="/penelitian" class="py-2 px-3 hover:bg-gray-100">Penelitian</a>
+        <a href="/berita" class="py-2 px-3 hover:bg-gray-100">Berita</a>
+        <a href="/agenda" class="py-2 px-3 hover:bg-gray-100">Agenda</a>
+        <a href="/alumni" class="py-2 px-3 hover:bg-gray-100">Alumni</a>
+        <a href="https://hima.tif.uin-suska.ac.id/" class="py-2 px-3 hover:bg-gray-100" target="_blank">HIMATIF</a>
+      </div>
+    </div>
+    
+  </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Ambil semua tombol & menu
+  const buttons = Array.from(document.querySelectorAll('[data-menu-btn]'));
+  const menus = Array.from(document.querySelectorAll('[data-menu]'));
+
+  // Utility: tutup semua menu
+  function closeAll() {
+    menus.forEach(menu => {
+      menu.classList.add('hidden');
+      const id = menu.getAttribute('data-menu');
+      const btn = document.querySelector(`[data-menu-btn="${id}"]`);
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  // Toggle ketika tombol diklik
+  buttons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation(); // penting: cegah document click berjalan
+      const key = btn.getAttribute('data-menu-btn');
+      if (!key) return;
+
+      const menu = document.querySelector(`[data-menu="${key}"]`);
+      if (!menu) return;
+
+      // Tutup menu lain, lalu toggle target
+      menus.forEach(m => {
+        if (m !== menu) m.classList.add('hidden');
+      });
+
+      const isHidden = menu.classList.contains('hidden');
+      if (isHidden) {
+        menu.classList.remove('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+        // Fokus ke menu (opsional)
+        menu.focus?.();
+      } else {
+        menu.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  // Pastikan klik di dalam menu tidak menutup (agar link bisa di-klik)
+  menus.forEach(menu => {
+    menu.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  });
+
+  // Klik di luar -> tutup semua
+  document.addEventListener('click', () => {
+    closeAll();
+  });
+
+  // ESC -> tutup semua
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAll();
+  });
+});
+</script>

@@ -1,0 +1,55 @@
+---
+
+// Data berita — bisa nanti diganti dynamic API, database, dll.
+const posts = [
+  {
+    title: "Penerimaan Mahasiswa Baru 2024/2025 Telah Dibuka!", // Judul berita
+    date: "26/11/2025", // Format: dd/mm/yyyy
+    image: "/1.png", // URL gambar masukin kedalam databasenya(sejauh ini masih belum dibuaut masih ancang ancang)
+    slug: "penerimaan-mahasiswa-baru-2024-2025", // untuk link dinamis
+    desc: "Penerimaan mahasiswa baru untuk tahun akademik 2024/2025 telah resmi dibuka...", // deskripsi singkat
+  },
+  {
+    title: "Seminar Nasional Teknologi Informasi",
+    date: "11/11/2025",
+    image: "/2.png",
+    slug: "seminar-nasional-teknologi-informasi",
+    desc: "Kegiatan Seminar Nasional Teknik Informatika dengan fokus AI dan Keamanan Siber...",
+  },
+  {
+    title: "Workshop AI untuk Mahasiswa",
+    date: "11/11/2025",
+    image: "/muah.png",
+    slug: "workshop-ai-mahasiswa",
+    desc: "Workshop penggunaan AI generatif untuk mendukung penelitian di bidang Informatika...",
+  },
+];
+---
+
+<section class="py-16 px-6 bg-gray-50">
+  <h1 class="text-4xl font-bold text-blue-900 mb-4 text-center">
+    Berita Terbaru
+  </h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-7 max-w-7xl mx-auto">
+    {posts.map((post) => (
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+        <img src={post.image} alt={post.title} class="w-full h-56 object-cover" />
+        <div class="p-5">
+          <p class="text-gray-500 text-sm">{post.date}</p>
+          <h2 class="mt-2 text-lg font-semibold text-gray-800 leading-snug">
+            {post.title}
+          </h2>
+
+          <p class="text-gray-600 text-sm mt-2">{post.desc}</p>
+          <a 
+            href={`/berita/${post.slug}`} 
+            class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700 transition"
+          >
+            Selengkapnya
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,23 +1,16 @@
 ---
-// import Navbar from "../pages/navbar.astro";
-// import Hero from "../pages/hero.astro";
 import Layout from "@/layouts/Layout.astro";
-import Navbar from "@/components/Navbar.tsx";
-import Home from "../pages/globals/landing-pages/home.astro";
-import About from "../pages/globals/landing-pages/about.astro";
-import HeroSlider from "../components/HeroSlider";
-import News from "../pages/berita/news.astro";
-import Center from "../pages/center.astro";
-import Footer from "../pages/globals/landing-pages/footer.astro";
+import Home from "../components/pages/landing-pages/home.astro";
+import About from "../components/pages/landing-pages/about.astro";
+import News from "../components/pages/landing-pages/news.astro";
+import Prestasi from "../components/pages/landing-pages/prestasi.astro";
+import Center from "../components/pages/landing-pages/center.astro";
 ---
 
-    <Navbar client:load />
-    <main class="pt-20"> 
-    <Layout />
-    <!-- <HeroSlider client:load /> -->
+<Layout title="Beranda"> 
     <Home />
-    <About />
     <Center />
+    <About />
     <News />
-    <Footer />
-  </main>
+    <Prestasi />
+</Layout>

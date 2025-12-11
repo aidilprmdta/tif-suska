@@ -1,0 +1,23 @@
+  <section class="max-w-4xl mx-auto px-6 py-16 space-y-12">
+  <section class="space-y-4">
+    <h2 class="text-2xl font-semibold text-gray-800 border-l-4 border-blue-600 pl-3">
+      Prospek Pekerjaan Lulusan
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      {[
+        "IT Programmer", "IT Executive", "IT Administrator", "IT Manager",
+        "IT Project Manager", "IT Support Officer", "IT Services",
+        "System Analyst", "System Engineer", "Analyst Programmer",
+        "Database Administrator", "Network Administrator", "Network Engineer",
+        "Software Engineer", "Software Developer", "Web Designer",
+        "Web Administrator", "Web Developer", "Helpdesk Analyst",
+        "Computer Security Specialist", "Chief Information Officer"
+      ].map(job => (
+        <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition">
+          {job}
+        </div>
+      ))}
+    </div>
+  </section>
+</section>
