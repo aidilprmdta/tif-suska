@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Navbar from "../components/globals/navbar.astro";
 import Footer from "../components/pages/landing-pages/footer.astro";
+import Search from "../components/globals/search.astro";
 ---
 
 <!doctype html>
@@ -12,6 +13,7 @@ import Footer from "../components/pages/landing-pages/footer.astro";
 	<body>
 		<main class="pt-20">
 			<Navbar />
+			<Search />
 				<slot />
 			<Footer />
 		</main>
