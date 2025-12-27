@@ -1,4 +1,24 @@
 <nav class="w-full border-b bg-white/70 backdrop-blur-md fixed top-0 left-0 right-0 z-50">
+
+  <!-- Top Bar -->
+  <div class="w-full bg-[#004d2c] text-white text-sm">
+    <div class="container mx-auto px-4 py-2 flex justify-end items-center gap-4">
+  
+      <a href="#" class="hover:underline">International Office</a>
+      <a href="#" class="hover:underline">Akreditasi</a>
+      <a href="#" class="hover:underline">Mitra</a>
+  
+      <!-- Language -->
+      <select
+        class="bg-white/90 text-gray-800 text-xs px-2 py-1 rounded-md focus:outline-none"
+      >
+        <option>ID</option>
+        <option>EN</option>
+      </select>
+  
+    </div>
+  </div>
+
   <div class="container mx-auto flex items-center justify-between py-4 px-4">
     
     <div class="flex items-left gap-3 font-semibold text-xl">
@@ -112,10 +132,36 @@
       <a href="/berita" class="hover:text-yellow-600 px-3 py-2">Berita</a>
       <a href="/agenda" class="hover:text-yellow-600 px-3 py-2">Agenda</a>
       <a href="/alumni" class="hover:text-yellow-600 px-3 py-2">Alumni</a>
-      <a href="https://hima.tif.uin-suska.ac.id/" class="hover:text-yellow-600 px-3 py-2" target="_blank">HIMATIF</a>
-   
-      <div class="relative flex items-center gap-4">
+      <a href="https://hima.tif.uin-suska.ac.id/"
+        class="hover:text-yellow-600 px-3 py-2"
+        target="_blank">
+        HIMATIF
+      </a>
+
+      <!-- Search Box -->
+    <div
+      id="search-box"
+      class="hidden absolute right-6 top-full mt-4 w-[380px] bg-white shadow-2xl rounded-xl overflow-hidden z-[999]"
+    >
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Cari halaman..."
+        class="w-full px-4 py-3 border-b focus:outline-none text-sm"
+      />
+
+      <div
+        id="search-results"
+        class="max-h-64 overflow-auto text-sm"
+      >
+        <div class="px-4 py-3 text-gray-400">
+          Ketik untuk mencari…
+        </div>
+      </div>
     </div>
+
+    <!-- Search Toggle -->
+
 
     </div>
     
